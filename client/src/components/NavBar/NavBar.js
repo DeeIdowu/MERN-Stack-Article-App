@@ -7,22 +7,22 @@ const NavBar = () => {
     <ul className="nav-bar">
       <li className="list">
         <NavLink className="links" to="/">
-          Home
+          <a style={{ textDecoration: "none", color: "#fff" }}>Home</a>
         </NavLink>
       </li>
       <li className="list">
         <NavLink className="links" to="/search">
-          Search
+          <a style={{ textDecoration: "none", color: "#fff" }}>Search</a>
         </NavLink>
       </li>
       <li className="list">
         <NavLink className="links" to="/signin">
-          Sign In
+          <a style={{ textDecoration: "none", color: "#fff" }}>Sign In</a>
         </NavLink>
       </li>
       <li className="list">
         <NavLink className="links" to="/register">
-          Register
+          <a style={{ textDecoration: "none", color: "#fff" }}> Register</a>
         </NavLink>
       </li>
     </ul>
