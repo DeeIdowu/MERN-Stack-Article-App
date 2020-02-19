@@ -7,7 +7,7 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <h1>This is the HomePage</h1>
+        <h1 style={{ textAlign: "center" }}>This is the HomePage</h1>
       </div>
     );
   }
