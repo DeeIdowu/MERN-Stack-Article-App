@@ -6,6 +6,8 @@ import * as serviceWorker from "./serviceWorker";
 //components:
 import Home from "../src/components/Home/Home";
 import NavBar from "../src/components/NavBar/NavBar";
+import SignIn from "../src/components/Auth/SignIn/SignIn";
+import Register from "../src/components/Auth/Register/Register";
 
 const Root = () => {
   return (
@@ -15,6 +17,8 @@ const Root = () => {
         <Fragment>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/signin" component={SignIn} />
+            <Route exact path="/register" component={Register} />
           </Switch>
         </Fragment>
       </BrowserRouter>
