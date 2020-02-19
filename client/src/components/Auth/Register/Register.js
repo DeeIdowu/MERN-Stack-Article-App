@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Component } from "react";
+import "./register.css";
 
 class Register extends React.Component {
   constructor() {
@@ -7,8 +8,20 @@ class Register extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1 style={{ textAlign: "center" }}>Registration Page</h1>
+      <div className="content">
+        <form className="form">
+          <h2 style={{ textAlign: "center" }}>Registration Page</h2>
+          <input type="text" placeholder="Username" name="username" />
+          <input type="text" placeholder="E-mail" name="email" />
+          <input type="text" placeholder="Password" name="password" />
+          <input
+            type="text"
+            placeholder="Enter Password Again"
+            name="password2"
+          />
+
+          <button type="submit">Submit</button>
+        </form>
       </div>
     );
   }
