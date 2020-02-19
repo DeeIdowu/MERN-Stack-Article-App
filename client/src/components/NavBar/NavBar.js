@@ -1,10 +1,31 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import "./navbar.css";
 
 const NavBar = () => {
   return (
-    <div>
-      <h1 style={{ textAlign: "center" }}>Nav Bar</h1>
-    </div>
+    <ul className="nav-bar">
+      <li className="list">
+        <NavLink className="links" to="/">
+          Home
+        </NavLink>
+      </li>
+      <li className="list">
+        <NavLink className="links" to="/search">
+          Search
+        </NavLink>
+      </li>
+      <li className="list">
+        <NavLink className="links" to="/signin">
+          Sign In
+        </NavLink>
+      </li>
+      <li className="list">
+        <NavLink className="links" to="/register">
+          Register
+        </NavLink>
+      </li>
+    </ul>
   );
 };
 
